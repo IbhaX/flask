@@ -8,6 +8,8 @@ def callback():
     code = request.url.split('code=')[-1]
     if request.args.get('format') == 'json':
         return jsonify({"code": code})
+    elif request.args.get('format') == 'plain':
+        return f"<h1>{code}</h1>"
     else:
         return f"""<h1> Authorized code </h1>
                     <h3>{code}</h3>
