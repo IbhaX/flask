@@ -1,21 +1,15 @@
 ---
-title: Flask
-description: A popular minimal server framework for Python
+title: Callback Url Server
+description: A simple callback url server for oauth testing purposes.
 tags:
   - python
   - flask
 ---
 
-# Python Flask Example
-
-This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a simple JSON response.
+# Callback Url Server
+Create a custom callback server
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/zUcpux)
-
-## ✨ Features
-
-- Python
-- Flask
 
 ## 💁‍♀️ How to use
 
