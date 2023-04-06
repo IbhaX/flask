@@ -9,7 +9,12 @@ def home():
 
 @app.route("/callback", methods=['GET', 'POST'])
 def callback():
-    code = request.url.split('code=')[-1]
+    code = request.url.split('&')
+    for param in code:
+        if param.startswith("code"):
+            code = param.split("code=")[-1]
+            break
+            
     if request.args.get('format') == "json":
         return jsonify({"code": code})
     elif request.args.get('format') == "plain":
